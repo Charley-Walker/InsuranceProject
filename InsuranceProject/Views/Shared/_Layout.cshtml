@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/mycss")
+
+</head>
+<body>
+    @* Facebook floater idk if this affects the nav *@
+    @*<div id="fb-root"></div>*@
+    <div class="navbar navbar-fixed-top" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("NZ Insurance", "Index", "Home", new { area = "" }, new { @class = "navbar-brand i-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="i-nav-li"><button class="btn i-nav-li-btn">Login</button></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="i-footer-content">
+
+                <div class="i-footer-location">
+                    <div class="i-map-mini">
+                        @* Insert map here *@
+                    </div>
+
+                    <div class="i-address">
+                        <p>123 Queen Street</p>
+                        <p>Auckland 1010</p>
+                    </div>
+                </div>
+
+                <div class="i-footer-left-list">
+                    <ul class="i-footer-list">
+                        <li class="i-footer-list-header">Main Menu</li>
+                        <li class="i-footer-list-content">Home</li>
+                        <li class="i-footer-list-content">About</li>
+                        <li class="i-footer-list-content">Services</li>
+                        <li class="i-footer-list-content">Contact</li>
+                        <li class="i-footer-list-content">Help</li>
+                    </ul>
+                </div>
+
+                <div class="i-footer-right-list">
+                    <ul class="i-footer-list">
+                        <li class="i-footer-list-header">Find Us On</li>
+                        <li class="i-footer-list-content">Facebook</li>
+                        <li class="i-footer-list-content">Twitter</li>
+                        <li class="i-footer-list-content">LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="i-copywrite">&copy; @DateTime.Now.Year - NZ Insurance</p>
+        </footer>
+    </div>
+
+    @* Facebook floater add this to a bundle *@
+    @*<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>*@
+    @Scripts.Render("~/bundles/myjs")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

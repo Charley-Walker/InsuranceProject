@@ -1,0 +1,292 @@
+﻿/* Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~ NAVIGATION BAR ON LAYOUT PAGE ~~~~~~~~~~~~~~~~ */
+/* Nav Bar */
+
+.i-nav-li{
+    top: 12px;
+    padding-left: 70px;
+}
+
+.i-nav-li a:hover {
+    color:black !important;
+}
+
+.i-nav-li-btn {
+    border-radius: 14px;
+    padding: 3px 17px;
+    background-color: #0015CE;
+    color:white;
+    border: none;
+}
+
+.i-nav-li-btn:hover {
+    background-color: #000D82;
+    color:white;
+
+}
+
+.navbar{
+    background-color: white;
+    border: none
+}
+.nav {
+    float: right;
+}
+.navbar-header a:hover {
+    color: #0015CE;
+}
+
+.i-brand {
+    color: #0015CE !important;
+}
+
+/* ~~~~~~~~~~~~~~~~ HOME PAGE ~~~~~~~~~~~~~~~~ */
+
+/* Carousel */
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Text Section */
+.i-textsection {
+    margin: 50px 0 50px 0;
+}
+
+.i-textsection-header {
+    padding-left: 1em;
+    text-transform: capitalize;
+}
+
+.i-textsection-text {
+    padding: 0 4em;
+    text-align: justify;
+}
+
+/* Service Cards */
+
+.i-cards-container{
+    width: 75%;
+    margin: auto;
+}
+
+.i-servicecards {
+    display: flex;
+}
+.i-homecard {
+    display: inline-block;
+    float: none;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    border-radius: 14px;
+
+}
+
+.i-homecard-image {
+    width: 250px;
+    border-radius: 14px 14px 0 0;
+}
+
+.i-cardtitle {
+    font-size: 18px;
+    margin: 1em 0 1em 1em;
+}
+
+.i-cardtext {
+    font-size: 14px;
+    margin:0 2em ;
+    text-align:justify;
+}
+
+.i-homecard-btn {
+    margin-top: 1.5em;
+    background-color: #0015CE;
+    border: none;
+    color: white;
+    float: right;
+    border-radius: 14px;
+    padding: 5px 17px;
+}
+
+/* Values Images */
+.i-values{
+    display:flex;
+}
+
+.i-valuesimg {
+    width: 300px;
+    height: auto;
+}
+
+.i-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+/* Centered text on images */
+.i-centered {
+    background-color: rgba(255,255,255,0.8);
+    width:100%;
+    padding: 1em 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: #0015CE;
+    font-size: 20px;
+}
+
+/* Accordion */
+
+
+/* ~~~~~~~~~~~~~~~~ CONTACT PAGE ~~~~~~~~~~~~~~~~ */
+
+/* Container of the Contact details and Contact form*/
+.i-contact-container{
+    display:flex;
+    width:100%;
+    height:100%;
+
+}
+
+/* Contact form */
+.i-contact-right {
+    width: 50%;
+    margin: 0;
+    padding: 4em 10em;
+}
+
+.i-contact-header {
+    margin: 0;
+    padding-bottom: 2em;
+}
+
+.i-contact-ta {
+    height: 200px;
+}
+
+.i-contact-btn {
+    float: right;
+    background-color: #0015CE;
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* Contact Details */
+.i-contact-left {
+    width: 50%;
+    color:white;
+}
+
+.i-contact-background {
+    background-image: url('Images/Portrait/man-in-white-and-orange-motocross-overall-riding-his-217869.jpg'); 
+    /*Change image?*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.i-contact-inner {
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    padding: 8em 11em;
+}
+
+.i-contact-inner-elements {
+    padding: 1em;
+}
+
+
+/* Contact Map */
+.i-contact-map{
+    width:100%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~ SERVICES PAGE ~~~~~~~~~~~~~~~~ */
+.i-service-container {
+    width: 100%;
+    display: flex;
+}
+
+.i-car-container {
+    margin: 3em auto;
+    width: 40%;
+}
+
+.i-motorbike-container {
+    margin: 3em auto;
+    width: 40%;
+}
+
+.i-motorbike-head {
+    width: 100%;
+    text-align:center;
+}
+
+.i-car-head {
+    width: 100%;
+    text-align: center;
+}
+
+.i-service-btn-container{
+    width:100%;
+    text-align:center;
+}
+
+.i-service-btn {
+    text-align: center;
+    margin: 1em auto;
+    color: #ffffff;
+    background-color: #0015CE;
+}
+
+.i-service-card {
+    border-bottom: 1.5px solid;
+}
+/* ~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ LOGIN PAGE ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ REGISTRATION PAGE ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ FOOTER ON LAYOUT PAGE ~~~~~~~~~~~~~~~~ */
+/* Footer Content */
+.i-footer-content {
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+.i-footer-location{
+    display:block;
+    margin:auto;
+}
+.i-footer-left-list {
+    display: block;
+    margin: auto;
+}
+
+.i-footer-right-list {
+    display: block;
+    margin: auto;
+}
+
+.i-footer-list{
+    list-style:none;
+    text-align:center;
+}
+
+.i-footer-list-header{
+    text-transform:uppercase;
+}
+
+.i-copywrite{
+    float:right;
+}

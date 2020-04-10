@@ -1,0 +1,56 @@
+﻿<div class="i-contact-container">
+
+    @* Left side content: Contact details *@
+    <div class="i-contact-left" >
+        <div class="i-contact-background">
+            <div class="i-contact-inner" >
+                <div class="i-contact-inner-elements">
+                    <h3>Address</h3>
+                    <p>
+                        123 Queen Street, <br />
+                        Auckland, 1010
+                    </p>
+                </div>
+                <div class="i-contact-inner-elements">
+                    <h3>Phone</h3>
+                    <p>09 123 4567</p>
+                </div>
+                <div class="i-contact-inner-elements">
+                    <h3>Email</h3>
+                    <p>contact@nzinsurance.co.nz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Right side content: Contact Form *@
+    <div class="i-contact-right">
+        <h3 class="i-contact-header">Contact Us</h3>
+        <form>
+            <div class="form-row" style="display:block;">
+                <div style="display:block; margin:1em 0;">
+                    <label for="validationServer01">Your Name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Enter your name" required>
+                </div>
+                <div style="display:block;margin:1em 0;">
+                    <label for="validationServer02">Email</label>
+                    <input type="email" class="form-control is-valid" id="validationServer02" placeholder="Enter your email" required>
+                </div>
+                <div style="display:block;margin:1em 0;">
+                    <label for="validationServer02">Message</label>
+                    <textarea class="form-control is-valid i-contact-ta" id="validationServer02" placeholder="Enter your message here" style="height:150px;" required></textarea>
+                </div>
+            </div>
+
+            <button class="btn btn-info i-contact-btn" type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+@* Bottom of page Map *@
+<div class="i-contact-map">
+    <div style="background-color:#E3F8C8; width:100%; height:350px;">Placeholder</div>
+    @* Map goes here. Fade out with opacity overlay? *@
+    @*<iframe height="450" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/view?zoom=17&center=-36.8560,174.7622&key=AIzaSyANaNXUDSKRRdFCmpqui1ODd_GmnnYJU88" allowfullscreen></iframe>*@
+</div>
